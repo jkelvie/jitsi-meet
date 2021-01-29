@@ -123,6 +123,9 @@ class DeepLinkingMobilePage extends Component<Props> {
                                 src = 'images/logo-deep-linking.png' />
                     }
                 </div>
+                <div onload='{ this._onLaunchWeb }'>
+                    LOADED
+                </div>
                 <div className = { `${_SNS}__body` }>
                     {
                         SHOW_DEEP_LINKING_IMAGE
