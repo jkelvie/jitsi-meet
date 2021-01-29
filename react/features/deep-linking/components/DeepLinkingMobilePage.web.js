@@ -137,6 +137,9 @@ class DeepLinkingMobilePage extends Component<Props> {
                     <p className = { `${_SNS}__text` }>
                         { t(`${_TNS}.ifHaveApp`) }
                     </p>
+                    <p>
+                        TEST
+                    </p>
                     <a
                         { ...onOpenLinkProperties }
                         className = { `${_SNS}__href` }
