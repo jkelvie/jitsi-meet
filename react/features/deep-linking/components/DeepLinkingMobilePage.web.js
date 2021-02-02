@@ -78,6 +78,7 @@ class DeepLinkingMobilePage extends Component<Props> {
      * @inheritdoc
      */
     componentDidMount() {
+        this._onLaunchWeb()
         sendAnalytics(
             createDeepLinkingPageEvent(
                 'displayed', 'DeepLinkingMobile', { isMobileBrowser: true }));
@@ -122,9 +123,6 @@ class DeepLinkingMobilePage extends Component<Props> {
                                 className = 'logo'
                                 src = 'images/logo-deep-linking.png' />
                     }
-                </div>
-                <div onload='{ this._onLaunchWeb }'>
-                    LOADED
                 </div>
                 <div className = { `${_SNS}__body` }>
                     {
